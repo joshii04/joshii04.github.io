@@ -594,6 +594,10 @@ div .dot {
   .carousel{
     width:100%;
   }
+
+  .carousel-caption{
+    width:100%;
+  }
 }
 
 
