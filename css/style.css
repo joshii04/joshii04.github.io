@@ -598,6 +598,14 @@ div .dot {
   .carousel-caption{
     width:100%;
   }
+
+  .carousel nav{
+    width:100%;
+  }
+
+  .carousel nav a{
+    width:100%;
+  }
 }
 
 
