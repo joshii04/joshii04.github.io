@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script defer type="text/javascript" src="js/animations.js"></script>
+  
+</head>
+
+<body>
+
+    <div class ="wrapper">
+        
+        <header>
+            <i class="fas fa-bars" id="btn"></i>
+            <h2 id="menu-toggle">My portfolio</h2> 
+        </header>
+        <main>
+            <div class="welcome-projects">
+                <h3>Welcome <span class="auto-type5"></class></h3>
+                <p>Here you can find my latest projects and a description of what they do.</p>
+            </div>
+
+            <div class="contain">
+                
+                <div class="projects-box1">
+                    <h4>C# Rocket simulator</h4>
+
+                    <p>
+                        I have a great passion for space flight, so I decided to create an application that
+                        could calculate the rocket thrust equation, along with how far and long the space craft 
+                        could fly depending on the fuel load etc.
+                    </p>
+                    <p>
+                        In this program the user is able to choose a variety of materials and parameters. For example, 
+                        if you had a rocket that was made out of steel, weighing 2KG and you wanted it to fly for x amount of time, 
+                        it would be able to calculate what other variables you would need in order for it to take-off.
+                    </p>
+
+                    <img class="rocket-sim" src="img/rocketSimSS.png">
+                    
+                    <p>The above image is a snippet of a feature in the program. Please feel free to contact me
+                        if you have any queries regarding my program.
+                    </p>
+                   
+
+                </div>
+    
+                <div class="projects-box2">
+                    <h4>Simulated Mission Control sensor</h4>
+
+                    <p>
+                        This porject was a part of my Computer Architecture module. We had been given the opportunity to 
+                        create any project we wanted with an Arduino kit; so I decided to create a very simple version 
+                        of how a Mission Control centre would operate.
+                    </p>
+
+                    <p>
+                        For this project, I had to assemble the hardware components and write the corresponding code for 
+                        the hardware. 
+                    </p>
+                    
+                    <h4>How does it work? (abort state)</h4>
+
+                    <ul>
+                        <li>If there is an object within 20CM of the ultra sonic sensor, abort</li>
+                        <li>Print to the LCD to "abort mission!"</li>
+                        <li>Turn the LED red</li>
+                        <li>Turn  the buzzer alarm on</li>
+                    </ul>
+
+                    <h4>How does it work? (lift-off state)</h4>
+
+                    <ul>
+                        <li>If there is nothing within 20CM of the ultra sonic sensor, wait 5 seconds and lift-off</li>
+                        <li>Print to the LCD "lift-off"</li>
+                        <li>Turn the LED blue</li>
+                        <li>Turn the buzzer alarm off</li>
+                    </ul>
+                    
+                    <img class="mission-c-ss" src="img/missionControlSS.png">
+
+                    <p>The above image is a snippet of code in the program. Please feel free to contact me
+                        if you have any queries regarding my program.</p>
+                    
+                </div>
+
+            </div>
+
+
+            <div id="sidenav" class="sidenav">
+                <span class="close-btn">&times;</span>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="projects.html">Projects</a></li>
+                  <li><a href="university.html">Univeristy</a></li>
+                  <li><a href="workEx.html">Work experience</a></li>
+                  <li><a href="imageGal.html">Image gallery</a></li>
+                </ul>
+              </div>
+
+          <div class="bubs">
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+            <div><span class="dot"></span></div>
+        </div>
+
+           
+        </main>
+
+            <footer>
+                <div class="contact-details">
+                    <a href="index.html#link"><h4>Contact details</h4></a><!--This is how you navigate to a specific place from another HTML page-->
+                </div>
+            </footer>
+
+
+    </div>
+</body>
