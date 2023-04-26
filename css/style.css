@@ -218,6 +218,18 @@ header i{
   text-decoration: none;
 }
 
+.rand-info #twitter{
+  margin-bottom: 20px;
+}
+
+/* .rand-info a:first-of-type, a:last-of-type{
+  font-size: 30px;
+  padding-right: 5px;
+  text-decoration: none;
+  margin-bottom: 25px;
+} */
+
+
 .rand-info h4 {
   margin-top: 15px;
 }
