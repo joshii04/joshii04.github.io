@@ -1,12 +1,7 @@
-// window.onload = function() {
-//     if (window.location.hash !== '' && !document.querySelector('#contact-details a').contains(event.target)) {
-//       window.scrollTo(0, -10);
-//     }
-//   };
 
 window.onload = function() {
     if (window.location.hash !== '' && window.location.hash !== '#link') {
-      window.scrollTo(0, -10);
+      window.scrollTo(0, -10); //when refresh occurs from contact details go to these coords
     }
     // clear the hash code from the URL
     history.replaceState('', document.title, window.location.pathname + window.location.search);
@@ -14,7 +9,8 @@ window.onload = function() {
 
 //this is for the auto typer
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() { //https://github.com/mattboldt/typed.js
+
     var typed = new Typed(".auto-type", {
         strings: ["Computer Science student", "junior software developer"],
         typeSpeed: 120,
@@ -25,7 +21,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 //this one is for the uni work page
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {//https://github.com/mattboldt/typed.js
+
     var typed = new Typed(".auto-type4", {
         strings: ["to my University work : )"],
         typeSpeed: 120,
@@ -38,7 +35,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 //for the workEx
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {//https://github.com/mattboldt/typed.js
+
     var typed = new Typed(".auto-type3", {
         strings: ["to my Work experience : )"],
         typeSpeed: 120,
@@ -52,7 +50,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 //for the image gal
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {//https://github.com/mattboldt/typed.js
+
     var typed = new Typed(".auto-type2", {
         strings: ["to my Image gallery : )"],
         typeSpeed: 120,
@@ -63,7 +62,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 //for projects
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {//https://github.com/mattboldt/typed.js
+
     var typed = new Typed(".auto-type5", {
         strings: ["to my Projects : )"],
         typeSpeed: 120,
@@ -97,28 +97,28 @@ let jumping = false;
 function animateText(){
 
 
-    let position = 0;
+    let position = 0; //start here
     const jumpHeight = 2;
     const jumpTime = 70;
-    const jumpStep = (jumpHeight / (jumpTime / 2));
+    const jumpStep = (jumpHeight / (jumpTime / 2)); //distance
     var jumpDownInterval;
     const jumpUpInterval = setInterval(() => {
         console.log('jumpup')
-        jumpUp()
-    }, jumpTime / 50);
+        jumpUp() //save jump up 
+    }, jumpTime / 50); //how fast 
 
 
     function jumpUp(){
         if (position >= jumpHeight) {
             clearInterval(jumpUpInterval);
-            jumpDownInterval = setInterval(() => {
+            jumpDownInterval = setInterval(() => { //time
                 console.log('jumpdown')
                 jumpDown()
             }, jumpTime / 50);
             return;
         }
 
-        position += jumpStep;
+        position += jumpStep; //itterate by this
         menuTog.style.transform = `translateY(-${position}px)`;
         menuBtn.style.transform = `translateY(-${position}px)`;
         
@@ -130,7 +130,7 @@ function animateText(){
           jumping = false;
           return;
         }
-        position -= jumpStep;
+        position -= jumpStep; //itterate
         menuTog.style.transform = `translateY(-${position}px)`;
         menuBtn.style.transform = `translateY(-${position}px)`;
         

@@ -11,7 +11,8 @@ html, body {
   /* background-color:rgb(226, 121, 0); */
   background-color: rgb(38, 139, 255);
   overflow-x: hidden;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; 
+  /* smooth animate when jumps and scrolls */
 }
 
 main{
@@ -354,6 +355,7 @@ div .dot {
 
 .uni-box1, .uni-box2{
   flex-basis: calc(50% - 20px); 
+  /* basis is really good for sizing of different div boxes */
   margin: 10px;
   border-radius: 10px;
   box-sizing: border-box;

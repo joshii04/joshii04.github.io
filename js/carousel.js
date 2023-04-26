@@ -1,5 +1,5 @@
 var images = document.getElementById('carouselImg');
-var back = document.getElementById('carouselBack');
+var back = document.getElementById('carouselBack'); //these act as pulls from the html that follow these ids
 var next = document.getElementById('carouselNext');
 var caption = document.getElementById('carouselCaption');
 
@@ -27,7 +27,7 @@ fetch('assets/imageBank.json').then(function(res){
         var imageWidth = 400;
 
         back.addEventListener('click', function(){
-            if(currentImage != 1){
+            if(currentImage != 1){ //if not curr image change by minusing
                 --currentImage;
                 images.style.left = imageWidth-(currentImage*imageWidth)+'px';
 
@@ -45,7 +45,7 @@ fetch('assets/imageBank.json').then(function(res){
             caption.innerText = json[currentImage-1].caption; //inner text means you can add text to an element
         });
 
-        caption.innerText = json[currentImage-1].caption;
+        caption.innerText = json[currentImage-1].caption; //same applies here by updating the ref
 
      }
     
