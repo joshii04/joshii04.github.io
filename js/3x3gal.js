@@ -14,7 +14,7 @@ fetch('assets/gallery.json') //creates a fetch request to the path
       link.href = image.url;
       link.target = '_blank';
       const img = document.createElement('img');
-      img.src = image.url;
+      img.src = image.url; //uniform resource locator
       img.alt = image.caption;
       const caption = document.createElement('caption');
       caption.textContent = image.caption;
