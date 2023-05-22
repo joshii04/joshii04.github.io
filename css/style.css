@@ -24,7 +24,7 @@ main{
   flex-direction: column;
   justify-content: space-between;
   min-height: 100%;
-  overflow-X: hidden q;
+  /* overflow-x: hidden ; */
 }
 
 header, footer {
